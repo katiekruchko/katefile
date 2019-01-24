@@ -168,7 +168,7 @@ Template Name: home page
             Lorem ipsum dolor sit amet, case ipsum dolor sit at, ut probo congue constituto mei, dicta falli ei usu. Dictas fabellas mea at, eos an oratio possim constituto, simul nostrud democritum te est. Sit homero postulant ad, temporibus persequeris vix te. Accumsan copiosae
           </div>
           
-            <a href="#" class="btn-read">READ MORE</a>
+            <a href="#" class="btn-read big-read-empty">READ MORE</a>
           
 
         </div>
@@ -189,7 +189,7 @@ Template Name: home page
           <div class="big-img-desc">
             Lorem ipsum dolor sit amet, case ipsum dolor sit at, ut probo congue constituto mei, dicta falli ei usu. Dictas fabellas mea at, eos an oratio possim constituto, simul nostrud democritum te est. Sit homero postulant ad, temporibus persequeris vix te. Accumsan copiosae
           </div>
-          <a href="#" class="btn-read">READ MORE</a>
+          <a href="#" class="btn-read big-read-empty">READ MORE</a>
           </div>
           
 
@@ -199,7 +199,72 @@ Template Name: home page
     </div>
   </div>
 </section>
-<?php dynamic_sidebar( 'big-area' ); ?>
+<section class="news-home-block">
+  <div class="wrap-news-home">
+    <div class="container ">
+      <div class="row">
+        <div class="col">
+          <h2 class="news-h2-home">
+            Recent News
+          </h2>
+
+           <div class="left-arr slick-arrow" style=""><img  src="<?php echo get_template_directory_uri(); ?>/img/arr-left.png" alt="icon"></div>
+          <div class="wrap-slider-news">
+
+            <?php
+
+$args = array(
+  'numberposts' => 6,
+  'offset' => 0,
+  'category' => 0,
+  'orderby' => 'post_date',
+  'order' => 'DESC',
+  'include' => '',
+  'exclude' => '',
+  'meta_key' => '',
+  'meta_value' =>'',
+  'post_type' => 'post',
+  'post_status' => 'publish',
+  'suppress_filters' => true
+);
+
+$rand_posts = get_posts( $args );
+global $more;
+foreach( $rand_posts as $post ) : ?>
+<?php setup_postdata( $post ); ?>
+
+
+            <div class="item-sl-news">
+
+       
+     <div class="img-wrap-news-home">
+  <?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
+   </div>
+   <div class="info-news-home">
+     <a class="title-news-home" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+  <div class="content-news">
+  <?php
+   $more = 0;
+   
+    the_content('Read More'); 
+ ?>
+ </div>
+   </div>
+    
+ 
+            </div>
+            <?php endforeach; ?>
+<?php wp_reset_postdata() ;
+
+?>
+            
+          </div>
+          <div class="right-arr slick-arrow" style=""><img  src="<?php echo get_template_directory_uri(); ?>/img/arr-right.png" alt="icon"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="main-page-content">
   <div class="container wrap-container" id="content">
     <div class="row">

@@ -135,46 +135,27 @@ physically and mentallly</div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
 
 
 	
 	<?php wp_footer(); ?>
-	<!-- <script>
-function footerToBottom() {
-     var browserHeight = $(window).height(),
-          footerOuterHeight = $('footer').outerHeight(true),
-          mainHeightMarginPaddingBorder = $('#wrap-page').outerHeight(true) - $('#wrap-page').height() + 3;
-          $('#wrap-page').css({
-               'min-height': browserHeight - footerOuterHeight - mainHeightMarginPaddingBorder,
-          });
-     };
-     footerToBottom();
-     $(window).resize(function () {
-     footerToBottom();
-});
-</script> -->
+
 <script>
 
-  //     jQuery(document).on('ready', function() {
-
-
-  //         jQuery('.slider').slick({
-  //           dots: true,
-  //       lazyLoad: 'ondemand', 
-  //      speed: 600,
-  //      initialSlide: 2,
-  
-  // autoplay: false,
-  // arrows: false,
-  // infinite: true,
-
-  //     });
-         
-   
-  //   });
   jQuery('.slider').slick({
   dots: true,
 arrows: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+  jQuery('.wrap-slider-news').slick({
+  dots: false,
+arrows: true,
+prevArrow: '.left-arr',
+nextArrow: '.right-arr',
   infinite: true,
   speed: 500,
   fade: true,

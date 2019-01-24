@@ -31,7 +31,7 @@ Template Name: right sidebar
 		<?php the_content(); ?>
 	<?php endwhile; endif; ?>
 
-	<?php echo do_shortcode( '[the-post-grid id="24" title="ghgvghv"]' ); ?>
+	
 			</div>
 			<div class="col-12 col-md-4 col-lg-4">
 				<?php dynamic_sidebar( 'standings' ); ?>
