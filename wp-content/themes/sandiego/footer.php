@@ -53,7 +53,7 @@ physically and mentallly</div>
     </section>
     <section class="footer-menu">
       <div class="img-triangle">
-        <svg version="1.1"  width="100%" height="160px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg version="1.1"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    xml:space="preserve" viewBox="0 0 100 100" preserveAspectRatio="none" >
 <polygon fill="#051c25" points="0,0 100,0 100,100 0,100
                                 "/>
@@ -64,7 +64,7 @@ physically and mentallly</div>
 <div class="wrap-footer-menu">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-6 col-lg-3">
         <h4 class="h4-footer">
           Address
         </h4>
@@ -72,7 +72,7 @@ physically and mentallly</div>
           Lorem ipsum dolor sit amet, case ipsum dolor sit at, ut probo congue constituto mei, dicta falli ei 
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-6 col-lg-3">
         <h4 class="h4-footer">
           quick links
         </h4>
@@ -85,7 +85,7 @@ physically and mentallly</div>
           </ul>
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-6 col-lg-3">
         <h4 class="h4-footer">
           contact
         </h4>
@@ -98,7 +98,7 @@ physically and mentallly</div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-6 col-lg-3">
         <h4 class="h4-footer">
           Newsletter
         </h4>

@@ -23,15 +23,25 @@
   
   <div class="col-xl-4">
     <a href="<?php echo get_site_url(); ?>">
-            <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Global Sports Intelligence"></a>
+            <img class="img-fluid d-block mx-auto top-img-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Global Sports Intelligence"></a>
   </div>
-  <div class="col-md-6 col-xl-6">
+  <div class="col-md-10 col-xl-6">
     <div class="wrap-menu ">
     <div class="nav-center mx-auto" id="navbar-example">
     <nav class="navbar navbar-expand-md navbar-light bg-faded "  id="top-m">
       
-      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler custom-toggler btn-burg" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> <div class="social-btn-top hidden-md-up">
+    <span class="top-social-item">
+      <a href="#"><img class="img-fluid d-block" src="<?php echo get_template_directory_uri(); ?>/img/fb-icon.png" alt="fb-icon"></a>
+    </span>
+    <span class="top-social-item">
+      <img class="img-fluid d-block" src="<?php echo get_template_directory_uri(); ?>/img/insta-icon.png" alt="insta-icon">
+    </span>
+    <span class="top-social-item">
+      <img class="img-fluid d-block " src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="twitter-icon">
+    </span>
+  </div>
       </button>
       <?php
       wp_nav_menu([
@@ -47,7 +57,10 @@
         'walker'          => new bs4navwalker()
       ]);
       ?>
+
+
     </nav>
+
 </div>
   </div>
 </div>
@@ -55,22 +68,23 @@
   <!--   <div class="login-btn-wrap">
       <a href="#" class="login-btn">LOG IN</a>
     </div> -->
-  <div class="social-btn-top col-md-2">
+  <div class="social-btn-top col-md-2 hidden-md-down hidden-md hidden-sm hidden-xs">
     <span class="top-social-item">
-      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/fb-icon.png" alt="fb-icon">
+      <img class="img-fluid d-block" src="<?php echo get_template_directory_uri(); ?>/img/fb-icon.png" alt="fb-icon">
     </span>
     <span class="top-social-item">
-      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/insta-icon.png" alt="insta-icon">
+      <img class="img-fluid d-block" src="<?php echo get_template_directory_uri(); ?>/img/insta-icon.png" alt="insta-icon">
     </span>
     <span class="top-social-item">
-      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="twitter-icon">
+      <img class="img-fluid d-block " src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="twitter-icon">
     </span>
   </div>
 </div>
 </div>
 
-		
+		<div class="scroll-picca">fjnvdkjnk</div>
 </header>
+
 
 
 

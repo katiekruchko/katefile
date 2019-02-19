@@ -25,7 +25,7 @@ Template Name: news
 <section class="page-sidebar">
 	<div class="container-fluid single-content">
 		<div class="row">
-			<div class="col-12 col-md-8 col-lg-8">
+			<div class="col-12 col-md-12 col-lg-7 col-xl-8">
 				
 	<div class="relatedposts">
 
@@ -55,7 +55,7 @@ $rand_posts = get_posts( $args );
 global $more;
 foreach( $rand_posts as $post ) : ?>
 <?php setup_postdata( $post ); ?>
-<div class="col-12 col-md-6">
+<div class="col-12 col-md-12 col-lg-12 col-xl-6">
    <div class="item-news">
      <div class="img-wrap-news">
   <?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
@@ -76,7 +76,7 @@ foreach( $rand_posts as $post ) : ?>
 </div>
 </div>
 			</div></div>
-			<div class="col-12 col-md-4 col-lg-4">
+			<div class="col-12 col-md-12 col-lg-5 col-xl-4">
         
 
   

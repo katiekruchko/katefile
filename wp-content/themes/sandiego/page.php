@@ -25,7 +25,7 @@ Template Name: right sidebar
 <section class="page-sidebar">
 	<div class="container-fluid single-content">
 		<div class="row">
-			<div class="col-12 col-md-8 col-lg-8">
+			<div class="col-12 col-md-12 col-lg-8">
 				
 	<?php if (have_posts()): while (have_posts()): the_post(); ?>
 		<?php the_content(); ?>
@@ -33,7 +33,7 @@ Template Name: right sidebar
 
 	
 			</div>
-			<div class="col-12 col-md-4 col-lg-4">
+			<div class="col-12 col-md-12 col-lg-4">
 				<?php dynamic_sidebar( 'standings' ); ?>
 
 			</div>
